@@ -1,8 +1,13 @@
 # Acc102-apparel-retail-red-flag-analysis
  A Python-based financial red flag screening of North American apparel retailers.
+
 # A Beginner-friendly Financial Red Flag Screener for Sportswear and Apparel Retail Companies
+
+A Python-based financial red flag screening of selected North American apparel retailers.
+
 ## Quick Access
-- Main notebook:https://github.com/Amiee648/Acc102-apparel-retail-red-flag-analysis/blob/main/A%20Beginner-friendly%20Financial%20Red%20Flag%20Screener%20for%20Sportwear%20and%20Apparel%20Retails%20Companies.ipynb
+- Main notebook: https://github.com/Amiee648/Acc102-apparel-retail-red-flag-analysis/blob/main/A%20Beginner-friendly%20Financial%20Red%20Flag%20Screener%20for%20Sportwear%20and%20Apparel%20Retails%20Companies.ipynb
+- Demo video: [Add Mediasite link here]
 
 ## Problem
 This project builds a simple financial red flag screener for selected sportswear and apparel retail companies. The purpose is to help beginner investors and business students identify potential warning signs by comparing revenue growth with inventory growth, fixed asset growth, and accounts receivable growth over the most recent fiscal years.
