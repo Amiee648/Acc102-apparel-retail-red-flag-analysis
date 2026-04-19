@@ -56,6 +56,9 @@ This tool is designed for beginner investors and business students. It provides 
 *   `figures/`: Directory containing output visualizations (e.g., `three_companies.png` for the multi-dimensional red flag charts).
 *   `README.md`: Project documentation.
 
+Demo Video
+*   **Watch the 1-3 minute Demo Video here:** 
+  
 ## Limitations
 - This notebook is a screening tool, not a definitive judgment of quality or fraud.
 - It identifies unusual financial patterns, but not the exact reason behind them.
