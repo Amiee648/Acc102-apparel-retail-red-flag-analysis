@@ -87,3 +87,4 @@ This project does not include raw financial data files for the following reasons
 - The screening thresholds are currently set at 15% for inventory and fixed asset divergence, and 20% for receivables divergence.
 - Growth rate calculations may be sensitive to one-off events, accounting changes, or seasonal fluctuations.
 - The analysis assumes consistent financial reporting standards across companies, which may not always hold true.
+- Significant growth spikes in specific years (e.g., high fixed asset growth in 2019) may reflect legitimate operational events such as acquisitions, store expansion, capital restructuring, or accounting reclassifications rather than financial anomalies. Users should validate findings against raw financial data and management commentary to understand the drivers.
