@@ -42,7 +42,7 @@ This tool is designed for beginner investors and business students. It provides 
   - receivables growth outpacing sales.
 
 ## How to Run
-1. **Prerequisites:** Ensure you have a valid WRDS account with access to Compustat data. If not, contact your academic institution for access.
+1. **Prerequisites:** Ensure you have a valid WRDS account with access to Compustat data. If you do not have WRDS access, contact your academic institution or visit [WRDS](https://wrds-www.wharton.upenn.edu/).
 2. **Install Dependencies:** Install required packages using pip:
    ```bash
    pip install -r requirements.txt
@@ -51,9 +51,17 @@ This tool is designed for beginner investors and business students. It provides 
    ```bash
    pip install pandas wrds matplotlib
    ```
-3. **Set Credentials:** Open the notebook and replace `"your_username"` in the WRDS connection line with your actual WRDS username.
-4. **Run the Notebook:** Open the notebook in Jupyter Lab/Notebook and execute all cells sequentially. The analysis will take a few minutes to download and process the data.
-5. **View Outputs:** The notebook will generate visualizations and display results directly in the output cells.
+3. **Set Credentials:** Open the notebook (`A Beginner-friendly Financial Red Flag Screener for Sportswear and Apparel Retail Companies.ipynb`) and update the WRDS connection line with your credentials:
+   ```python
+   db = wrds.Connection(wrds_username="your_wrds_username")
+   ```
+4. **Run the Notebook:** Execute all cells sequentially. The notebook will:
+   - Connect to WRDS and fetch Compustat data dynamically
+   - Perform data cleaning and growth rate calculations
+   - Generate visualizations and output results directly in the notebook
+5. **Outputs:** Analysis results and visualizations will be displayed in the notebook output cells. To save figures, modify the visualization cells to include `plt.savefig()` commands.
+
+**Note:** No data files are included in this repository. All data is fetched dynamically from WRDS at runtime, ensuring you always have the latest financial information.
 
 ## Repository Structure
 *   `A Beginner-friendly Financial Red Flag Screener for Sportswear and Apparel Retail Companies.ipynb`: The main Jupyter notebook containing the complete analysis workflow.
@@ -61,8 +69,15 @@ This tool is designed for beginner investors and business students. It provides 
 *   `figures/`: Directory containing output visualizations (e.g., `three_companies.png` for the multi-dimensional red flag charts).
 *   `README.md`: Project documentation.
 
-Demo Video
-*   **Watch the 1-3 minute Demo Video here:** 
+## Data Availability
+This project does not include raw financial data files for the following reasons:
+- **WRDS Licensing:** The Compustat data is sourced from WRDS, a restricted academic database. Distributing this data would violate licensing agreements.
+- **Dynamic Data Fetching:** Instead of static datasets, the notebook fetches data dynamically from WRDS at runtime, ensuring analyses always use current financial information.
+- **Access Requirements:** Users must have institutional access to WRDS to run this project. If your institution provides WRDS access, you can run the notebook directly.
+
+**For reproducibility:** The notebook uses fixed filter criteria (see `3. Load and Clean Data` section) to ensure consistent data extraction across runs. The SQL query specifies the exact data selection logic, making the analysis transparent and auditable.
+
+---
   
 ## Limitations
 - This notebook is a screening tool, not a definitive judgment of quality or fraud.
